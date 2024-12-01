@@ -30,7 +30,7 @@ section code {
   font-family: "Courier New", Courier, monospace;
   font-size: 0.985rem;
 }
-section .code__block {
+section .syntax__block {
   display: block;
   padding: 5px 10px;
   border-radius: 5px;
@@ -76,4 +76,13 @@ section table tbody tr:last-child td:first-child + td {
 }
 section table th {
   padding: 12px;
+}
+section .code__block {
+  padding: 15px;
+  border-radius: 5px;
+  background-color: #dddddd;
+}
+section .code__block code {
+  white-space: pre-line;
+  line-height: 1.3;
 }/*# sourceMappingURL=style.css.map */

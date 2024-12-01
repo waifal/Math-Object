@@ -74,7 +74,7 @@ section {
         }
 
         tbody {
-            tr:nth-child(1n) td {
+            tr td {
                 border-bottom: $table-style;
             }
 
@@ -97,6 +97,4 @@ section {
             padding: 12px;
         }
     }
-
-    
 }

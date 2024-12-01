@@ -1,0 +1,79 @@
+* {
+  padding: 0;
+  margin: 15px auto;
+  box-sizing: border-box;
+}
+
+html {
+  font: 1rem Helvetica, Arial, sans-serif;
+}
+html p, html li, html abbr, html td {
+  font: 1rem/1.5 Calibri, Arial, sans-serif;
+}
+
+h1 {
+  text-align: center;
+}
+
+a {
+  color: rgb(0, 110, 255);
+}
+
+section {
+  width: 75ch;
+  padding: 15px;
+  border-radius: 10px;
+  outline: 1px solid #dddddd;
+  box-shadow: rgba(0, 0, 0, 0.04) 0px 3px 5px;
+}
+section code {
+  font-family: "Courier New", Courier, monospace;
+  font-size: 0.985rem;
+}
+section .code__block {
+  display: block;
+  padding: 5px 10px;
+  border-radius: 5px;
+  background-color: #f8f8f8;
+}
+section ul li {
+  list-style-position: inside;
+}
+section table {
+  width: 100%;
+  border-spacing: 0;
+}
+section table td,
+section table th {
+  text-align: left;
+  padding: 5px 15px;
+  border-left: 1px solid #e2e2e2;
+}
+section table thead th:first-child {
+  border-top: 1px solid #e2e2e2;
+  border-bottom: 1px solid #e2e2e2;
+  border-top-left-radius: 5px;
+}
+section table thead th:last-child {
+  border-top: 1px solid #e2e2e2;
+  border-right: 1px solid #e2e2e2;
+  border-bottom: 1px solid #e2e2e2;
+  border-top-right-radius: 5px;
+}
+section table tbody tr:nth-child(1n) td {
+  border-bottom: 1px solid #e2e2e2;
+}
+section table tbody tr td:last-child {
+  border-right: 1px solid #e2e2e2;
+}
+section table tbody tr:last-child td:first-child {
+  border-bottom: 1px solid #e2e2e2;
+  border-bottom-left-radius: 5px;
+}
+section table tbody tr:last-child td:first-child + td {
+  border-bottom: 1px solid #e2e2e2;
+  border-bottom-right-radius: 5px;
+}
+section table th {
+  padding: 12px;
+}/*# sourceMappingURL=style.css.map */

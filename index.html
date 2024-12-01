@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Working with Numbers: The Math Object</title>
+        <link rel="stylesheet" href="styles/style.css" />
+    </head>
+    <body>
+        <h1>Working with Numbers: The Math Object</h1>
+        <section>
+            <h2>The parseInt() function</h2>
+            <p>The <code>parseInt()</code> function is used to convert a string into an integer.</p>
+            <div>
+                <h3>Syntax</h3>
+                <p><code class="code__block">parseInt(string, base)</code></p>
+            </div>
+            <ul>
+                <li>string: The string value you want to convert.</li>
+                <li>
+                    base: An optional base used by the number in <code>string</code>. If you omit this value, JavaScript
+                    uses <a href="https://www.twinkl.co.nz/teaching-wiki/base-10" target="_blank">base 10</a>.
+                </li>
+            </ul>
+            <p>
+                Note that if the <code>string</code> argument contains a string representation of a floating-point
+                value, <code>parseInt()</code> returns only the integer portion. Also, if the string begins with a
+                number followed by some text, <code>parseInt()</code> returns the number (or, at least, its integer
+                portion). The following table shows you the <code>parseInt()</code> results for various
+                <code>string</code> values.
+            </p>
+            <table>
+                <thead>
+                    <tr>
+                        <th>string</th>
+                        <th>parseInt(string)</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>"5"</td>
+                        <td>5</td>
+                    </tr>
+                    <tr>
+                        <td>"5.1"</td>
+                        <td>5</td>
+                    </tr>
+                    <tr>
+                        <td>"5.9"</td>
+                        <td>5</td>
+                    </tr>
+                    <tr>
+                        <td>"5 feet"</td>
+                        <td>5</td>
+                    </tr>
+                    <tr>
+                        <td>"take 5"</td>
+                        <td><abbr title="Not a number">NaN</abbr></td>
+                    </tr>
+                    <tr>
+                        <td>"five"</td>
+                        <td><abbr title="Not a number">NaN</abbr></td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+    </body>
+</html>

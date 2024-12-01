@@ -1,0 +1,102 @@
+$syntax-block: #f8f8f8;
+
+* {
+    padding: 0;
+    margin: 15px auto;
+    box-sizing: border-box;
+}
+
+html {
+    font: 1rem Helvetica, Arial, sans-serif;
+
+    p, li, abbr, td {
+        font: 1rem/1.5 Calibri, Arial, sans-serif;
+    }
+}
+
+h1 {
+    text-align: center;
+}
+
+a {
+    color: rgb(0, 110, 255);
+}
+
+section {
+    width: 75ch;
+    padding: 15px;
+    border-radius: 10px;
+    outline: 1px solid #dddddd;
+    box-shadow: rgba(0, 0, 0, 0.04) 0px 3px 5px;
+
+    code {
+        font-family: 'Courier New', Courier, monospace;
+        font-size: 0.985rem;
+    }
+
+    .code__block {
+        display: block;
+        padding: 5px 10px;
+        border-radius: 5px;
+        background-color: $syntax-block;
+    }
+
+    ul li {
+        list-style-position: inside;
+    }
+
+    table {
+        $table-radius: 5px;
+        $table-style: 1px solid #e2e2e2;
+        width: 100%;
+        border-spacing: 0;
+    
+        td,
+        th {
+            text-align: left;
+            padding: 5px 15px;
+            border-left: $table-style;
+        }
+
+        thead {
+            th:first-child {
+                border-top: $table-style;
+                border-bottom: $table-style;
+                border-top-left-radius: $table-radius;
+            }
+
+            th:last-child {
+                border-top: $table-style;
+                border-right: $table-style;
+                border-bottom: $table-style;
+                border-top-right-radius: $table-radius;
+            }
+        }
+
+        tbody {
+            tr:nth-child(1n) td {
+                border-bottom: $table-style;
+            }
+
+            tr td:last-child {
+                border-right: $table-style;
+            }
+
+            tr:last-child td:first-child {
+                border-bottom: $table-style;
+                border-bottom-left-radius: $table-radius;
+            }
+
+            tr:last-child td:first-child + td {
+                border-bottom: $table-style;
+                border-bottom-right-radius: $table-radius;
+            }
+        }
+    
+        th {
+            padding: 12px;
+        }
+    }
+
+    
+}

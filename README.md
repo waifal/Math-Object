@@ -62,7 +62,7 @@ integer value, `parseFloat()` returns just an integer. Also, like
 
 For quick conversions from a string to a number, most often use the +
 operator, which tells JavaScript to treat a string that contains a
-number as a true numeric value. For Example, consider the following
+number as a true numeric value. For example, consider the following
 code:
 
 ```javascript
@@ -80,7 +80,7 @@ addition will be 6.
 The `Math` Object is a bit different than most of the other Objects you
 come across. That's because you never create an instance of the `Math`
 Object that gets stored in a variable. Instead, the `Math` Object is a
-built-in JavaScript Object that you use as is. The rest of this chapter
+built-in JavaScript Object that you use as is. The rest of this
 explores some properties and methods associated with the `Math` Object.
 
 ### Properties of the Math Object

@@ -13,7 +13,7 @@
             <p>The <code>parseInt()</code> function is used to convert a string into an integer.</p>
             <div>
                 <h3>Syntax</h3>
-                <p><code class="code__block">parseInt(string, base)</code></p>
+                <p><code class="syntax__block">parseInt(string, base)</code></p>
             </div>
             <ul>
                 <li>string: The string value you want to convert.</li>
@@ -72,7 +72,7 @@
             </p>
             <div>
                 <h3>Syntax</h3>
-                <p><code class="code__block">parseFloat(string)</code></p>
+                <p><code class="syntax__block">parseFloat(string)</code></p>
             </div>
             <p>
                 Note that if <code>string</code> argument contains a string representation of an integer value,
@@ -117,8 +117,22 @@
         </section>
         <section>
             <h2>The + operator</h2>
-            <p></p>
-            <p></p>
+            <p>
+                For quick conversions from a string to a number, most often use the + operator, which tells JavaScript
+                to treat a string that contains a number as a true numeric value. For Example, consider the following
+                code:
+            </p>
+            <!-- prettier-ignore -->
+            <div class="code__block">
+                <code> const numOfShoes = '2'; 
+                    const numOfSocks = 4; 
+                    const totalItems = +numOfShoes + numOfSocks;
+                </code>
+            </div>
+            <p>
+                By adding + in front of the <code>numOfShoes</code> variable, I force JavaScript to set that variables
+                value to the number 2, and the result of the addition will be 6.
+            </p>
         </section>
     </body>
 </html>

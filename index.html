@@ -7,23 +7,49 @@
         <link rel="stylesheet" href="styles/style.css" />
     </head>
     <body>
-        <nav>
+        <nav role="navigation">
             <ul>
-                <li><a href="#parseInt">parseInt() function</a></li>
-                <li><a href="#parseFloat">parseFloat() function</a></li>
-                <li><a href="#the+operator">The + Operator</a></li>
                 <li>
-                    <a href="#the-math-objects-properties-and-methods">The Math Objects Properties and Methods</a>
-                    <ul>
-                        <li><a href="#properties-of-the-math-object">Properties of the Math object</a></li>
-                        <li><a href="#methods-of-the-math-object">Methods of the Math object</a></li>
+                    <a href="#parseInt" aria-label="Learn about the Math object's parseInt() function"
+                        >parseInt() function</a
+                    >
+                </li>
+                <li>
+                    <a href="#parseFloat" aria-label="Learn about the Math object's parseFloat() function"
+                        >parseFloat() function</a
+                    >
+                </li>
+                <li>
+                    <a href="#the+operator" aria-label="Learn about Math object's + operator">The + Operator</a>
+                </li>
+                <li>
+                    <a
+                        href="#the-math-objects-properties-and-methods"
+                        aria-label="Learn about the properties and methods of the Math object"
+                        >The Math Object's Properties and Methods</a
+                    >
+                    <ul role="menu">
+                        <li>
+                            <a
+                                href="#properties-of-the-math-Object"
+                                aria-label="Learn about the properties of the Math object"
+                                >Properties of the Math Object</a
+                            >
+                        </li>
+                        <li>
+                            <a
+                                href="#methods-of-the-math-Object"
+                                aria-label="Learn about the methods of the Math object"
+                                >Methods of the Math Object</a
+                            >
+                        </li>
                     </ul>
                 </li>
             </ul>
         </nav>
         <h1>Working with Numbers: The Math Object</h1>
         <section id="parseInt">
-            <h2>The parseInt() function</h2>
+            <h2>The parseInt() Function</h2>
             <p>The <code>parseInt()</code> function is used to convert a string into an integer.</p>
             <div>
                 <h3>Syntax</h3>
@@ -43,11 +69,11 @@
                 portion). The following table shows you the <code>parseInt()</code> results for various
                 <code>string</code> values.
             </p>
-            <table>
+            <table role="table">
                 <thead>
                     <tr>
-                        <th>string</th>
-                        <th>parseInt(string)</th>
+                        <th scope="col">string</th>
+                        <th scope="col">parseInt(string)</th>
                     </tr>
                 </thead>
                 <tbody>
@@ -79,7 +105,7 @@
             </table>
         </section>
         <section id="parseFloat">
-            <h2>The parseFloat() function</h2>
+            <h2>The parseFloat() Function</h2>
             <p>
                 The <code>parseFloat()</code> function is similar to <code>parseInt()</code>, but you use it to convert
                 a string into a floating-point value:
@@ -94,11 +120,11 @@
                 begins with a number followed by some text, <code>parseFloat()</code> returns the number. The following
                 table shows you the <code>parseFloat()</code> results for some <code>string</code> values.
             </p>
-            <table>
+            <table role="table">
                 <thead>
                     <tr>
-                        <th>string</th>
-                        <th>parseFloat(string)</th>
+                        <th scope="col">string</th>
+                        <th scope="col">parseFloat(string)</th>
                     </tr>
                 </thead>
                 <tbody>
@@ -130,7 +156,7 @@
             </table>
         </section>
         <section id="the+operator">
-            <h2>The + operator</h2>
+            <h2>The <code>+</code> Operator</h2>
             <p>
                 For quick conversions from a string to a number, most often use the + operator, which tells JavaScript
                 to treat a string that contains a number as a true numeric value. For Example, consider the following
@@ -144,24 +170,24 @@
                 </code>
             </div>
             <p>
-                By adding + in front of the <code>numOfShoes</code> variable, I force JavaScript to set that variables
-                value to the number 2, and the result of the addition will be 6.
+                By adding <code>+</code> in front of the <code>numOfShoes</code> variable, I force JavaScript to set
+                that variables value to the number 2, and the result of the addition will be 6.
             </p>
         </section>
-        <section id="the-math-objects-properties-and-methods">
-            <h2>The Math object's properties and methods</h2>
+        <section id="the-math-Objects-properties-and-methods">
+            <h2>The Math Object's Properties And Methods</h2>
             <p>
-                The <code>Math</code> object is a bit different than most of the other objects you come across. That's
-                because you never create an instance of the <code>Math</code> object that gets stored in a variable.
-                Instead, the <code>Math</code> object is a built-in JavaScript object that you use as is. The rest of
-                this chapter explores some properties and methods associated with the <code>Math</code> object.
+                The <code>Math</code> Object is a bit different than most of the other Objects you come across. That's
+                because you never create an instance of the <code>Math</code> Object that gets stored in a variable.
+                Instead, the <code>Math</code> Object is a built-in JavaScript Object that you use as is. The rest of
+                this chapter explores some properties and methods associated with the <code>Math</code> Object.
             </p>
-            <h3 id="properties-of-the-math-object">Properties of the Math object</h3>
+            <h3 id="properties-of-the-math-Object">Properties of the Math Object</h3>
             <p>
-                The <code>Math</code> object's properties are all constants that are commonly used in mathematical
-                operations. Table 1-1 lists all the available <code>Math</code> objects properties.
+                The <code>Math</code> Object's properties are all constants that are commonly used in mathematical
+                operations. Table 1-1 lists all the available <code>Math</code> Objects properties.
             </p>
-            <table>
+            <table role="table">
                 <caption>
                     <span>
                         <span>Table 1-1</span>
@@ -170,9 +196,9 @@
                 </caption>
                 <thead>
                     <tr>
-                        <th>Property Syntax</th>
-                        <th>What it represents</th>
-                        <th>Approximate Value</th>
+                        <th scope="col">Property Syntax</th>
+                        <th scope="col">What it represents</th>
+                        <th scope="col">Approximate Value</th>
                     </tr>
                 </thead>
                 <tbody>
@@ -218,13 +244,13 @@
                     </tr>
                 </tbody>
             </table>
-            <h3 id="methods-of-the-math-object">Methods of the Math object</h3>
+            <h3 id="methods-of-the-math-Object">Methods of the Math Object</h3>
             <p>
-                The <code>Math</code> object's methods enable you to perform mathematical operations such as square
-                roots, powers, rounding, trigonometry, and more. Many of the <code>Math</code> object's methods are
+                The <code>Math</code> Object's methods enable you to perform mathematical operations such as square
+                roots, powers, rounding, trigonometry, and more. Many of the <code>Math</code> Object's methods are
                 summarized in Table 1-2.
             </p>
-            <table>
+            <table role="table">
                 <caption>
                     <span>
                         <span>Table 1-2</span>
@@ -233,8 +259,8 @@
                 </caption>
                 <thead>
                     <tr>
-                        <th>Method Syntax</th>
-                        <th>What it Returns</th>
+                        <th scope="col">Method Syntax</th>
+                        <th scope="col">What it Returns</th>
                     </tr>
                 </thead>
                 <tbody>

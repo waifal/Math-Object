@@ -46,3 +46,15 @@ Note that if `string` argument contains a string representation of an integer va
 | "5 feet" | 5                  |
 | "take 5" | NaN                |
 | "five"   | NaN                |
+
+## The `+` Operator
+
+For quick conversions from a string to a number, most often use the `+` operator, which tells JavaScript to treat a string that contains a number as a true numeric value. For example, consider the following code:
+
+```javascript
+const numOfShoes = "2";
+const numOfSocks = 4;
+const totalItems = +numOfShoes + numOfSocks;
+```
+
+By adding `+` in front of `numOfShoes` variable, I force JavaScript to set that variables value to the number 2, and the result of the addition will be 6.

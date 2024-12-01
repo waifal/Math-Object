@@ -25,3 +25,24 @@ Note that if the string argument contains a string representation of a floating-
 | "5 feet" | 5                |
 | "take 5" | NaN              |
 | "five"   | NaN              |
+
+## The parseFloat() Function
+
+The `parseFloat()` function is similar to `parseInt()`, but you use it to convert a string into a floating-point value:
+
+### Syntax
+
+```javascript
+parseFloat(string);
+```
+
+Note that if `string` argument contains a string representation of an integer value, `parseFloat()` returns just an integer. Also, like `parseInt()`, if the string begins with a number followed by some text, `parseFloat()` returns the number. The following table shows you the `parseFloat()` results for some `string` values.
+
+| string   | parseFloat(string) |
+| -------- | ------------------ |
+| "5"      | 5                  |
+| "5.1"    | 5.1                |
+| "5.9"    | 5.9                |
+| "5 feet" | 5.2                |
+| "take 5" | NaN                |
+| "five"   | NaN                |

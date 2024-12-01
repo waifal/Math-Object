@@ -75,6 +75,9 @@ section table {
 section table caption {
     font-weight: bold;
 }
+section:last-of-type table:not(:last-child) {
+    margin-bottom: 45px;
+}
 section table caption span:first-child {
     display: flex;
     align-items: center;

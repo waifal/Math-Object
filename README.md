@@ -12,8 +12,8 @@ The `parseInt()` function is used to convert a string into an integer.
 parseInt(string, base);
 ```
 
-1. _string_: The string value you want to convert.
-2. _base_: An optional base used by the number in string. If you omit this value, JavaScript uses base 10.
+-   _string_: The string value you want to convert.
+-   _base_: An optional base used by the number in string. If you omit this value, JavaScript uses base 10.
 
 Note that if the string argument contains a string representation of a floating-point value, parseInt() returns only the integer portion. Also, if the string begins with a number followed by some text, parseInt() returns the number (or, at least, its integer portion). The following table shows you the parseInt() results for various string values.
 

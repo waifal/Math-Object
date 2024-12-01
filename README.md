@@ -66,9 +66,9 @@ number as a true numeric value. For Example, consider the following
 code:
 
 ```javascript
-const numOfShoes = '2';
+const numOfShoes = "2";
 const numOfSocks = 4;
-const totalItems = +numOfShoes + numOfSocks;                 `
+const totalItems = +numOfShoes + numOfSocks;
 ```
 
 By adding `+` in front of the `numOfShoes` variable, I force JavaScript

@@ -74,11 +74,12 @@
                 <h3>Syntax</h3>
                 <p><code class="code__block">parseFloat(string)</code></p>
             </div>
-            <ul>
-                <li></li>
-                <li></li>
-            </ul>
-            <p></p>
+            <p>
+                Note that if <code>string</code> argument contains a string representation of an integer value,
+                <code>parseFloat()</code> returns just an integer. Also, like <code>parseInt()</code>, if the string
+                begins with a number followed by some text, <code>parseFloat()</code> returns the number. The following
+                table shows you the <code>parseFloat()</code> results for some <code>string</code> values.
+            </p>
             <table>
                 <thead>
                     <tr>
@@ -93,15 +94,15 @@
                     </tr>
                     <tr>
                         <td>"5.1"</td>
-                        <td>5</td>
+                        <td>5.1</td>
                     </tr>
                     <tr>
                         <td>"5.9"</td>
-                        <td>5</td>
+                        <td>5.9</td>
                     </tr>
                     <tr>
                         <td>"5 feet"</td>
-                        <td>5</td>
+                        <td>5.2</td>
                     </tr>
                     <tr>
                         <td>"take 5"</td>

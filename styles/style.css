@@ -43,6 +43,23 @@ section table {
   width: 100%;
   border-spacing: 0;
 }
+section table caption {
+  font-weight: bold;
+}
+section table caption span:first-child {
+  display: flex;
+  align-items: center;
+  margin: 0;
+}
+section table caption span:first-child span:first-child {
+  margin-right: auto;
+}
+section table caption span:first-child span:last-child {
+  margin-right: auto;
+}
+section table caption span:first-child span {
+  margin: 0;
+}
 section table td,
 section table th {
   text-align: left;
@@ -53,6 +70,10 @@ section table thead th:first-child {
   border-top: 1px solid #e2e2e2;
   border-bottom: 1px solid #e2e2e2;
   border-top-left-radius: 5px;
+}
+section table thead th {
+  border-top: 1px solid #e2e2e2;
+  border-bottom: 1px solid #e2e2e2;
 }
 section table thead th:last-child {
   border-top: 1px solid #e2e2e2;

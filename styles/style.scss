@@ -50,6 +50,28 @@ section {
         $table-style: 1px solid #e2e2e2;
         width: 100%;
         border-spacing: 0;
+
+        caption {
+            font-weight: bold;
+
+            span:first-child {
+                display: flex;
+                align-items: center;
+                margin: 0;
+
+                span:first-child {
+                    margin-right: auto;
+                }
+
+                span:last-child {
+                    margin-right: auto;
+                }
+
+                span {
+                    margin: 0;
+                }
+            }
+        }
     
         td,
         th {
@@ -63,6 +85,11 @@ section {
                 border-top: $table-style;
                 border-bottom: $table-style;
                 border-top-left-radius: $table-radius;
+            }
+
+            th {
+                border-top: $table-style;
+                border-bottom: $table-style;
             }
 
             th:last-child {

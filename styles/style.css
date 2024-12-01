@@ -60,7 +60,7 @@ section table thead th:last-child {
   border-bottom: 1px solid #e2e2e2;
   border-top-right-radius: 5px;
 }
-section table tbody tr:nth-child(1n) td {
+section table tbody tr td {
   border-bottom: 1px solid #e2e2e2;
 }
 section table tbody tr td:last-child {

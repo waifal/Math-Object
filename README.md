@@ -43,6 +43,6 @@ Note that if `string` argument contains a string representation of an integer va
 | "5"      | 5                  |
 | "5.1"    | 5.1                |
 | "5.9"    | 5.9                |
-| "5 feet" | 5.2                |
+| "5 feet" | 5                  |
 | "take 5" | NaN                |
 | "five"   | NaN                |
